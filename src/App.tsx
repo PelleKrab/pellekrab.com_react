@@ -7,6 +7,7 @@ import SpaceShooterProject from './components/SpaceShooterProject';
 import JavaRoboticsProject from './components/JavaRoboticsProject';
 import FRCJavaFramework from './components/FRCJavaFramework';
 import RustBlockchainProject from './components/RustBlockchainProject';
+import ECOBitesBSWHackathon from './components/ECOBitesBSWHackathon';
 
 const App: React.FC = () => (
   <Router>
@@ -22,6 +23,7 @@ const App: React.FC = () => (
           </div>
         </div>
       } />
+      <Route path="/ECOBitesBSWHackathon" element={<ECOBitesBSWHackathon />} />
       <Route path="/space-shooter-project" element={<SpaceShooterProject />} />
       <Route path="/java-robotics-project" element={<JavaRoboticsProject />} />
       <Route path="/frc-java-framework" element={<FRCJavaFramework />} />

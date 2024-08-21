@@ -8,6 +8,12 @@ const Projects: React.FC = () => (
       <p>An incomplete collection of things I have worked on over the years. <br />Click on a project to learn more!</p>
     </header>
     <ProjectEntry 
+      href="/ECOBitesBSWHackathon" 
+      title="ECO Bites Boulder Startup Week Hackathon" 
+      description="A hackathon project aimed at promoting sustainability within the restaurant industry. Our team developed a React-based website that uses AI to rate restaurants on their sustainability practices." 
+      technologies="React, TypeScript, nextJS, AI, Claude 3, and AWS" 
+    />
+    <ProjectEntry 
       href="/rust-blockchain" 
       title="Rust Blockchain" 
       description="A Rust-based project focused on teaching me the basics of blockchain, multithreading, and cryptography. It highlights key blockchain functionalities such as transaction processing, block mining, and transaction validation, offering a practical introduction to these foundational technologies." 
