@@ -22,7 +22,7 @@ const StarrySky: React.FC = () => {
                 const star = document.createElement('div');
                 star.classList.add('star', 'absolute', 'bg-white', 'rounded-full');
                 const x = Math.random() * window.innerWidth;
-                const y = Math.random() * window.innerHeight * 2.8;
+                const y = Math.random() * window.innerHeight * 3.2;
                 star.dataset.x = x.toString();
                 star.dataset.y = y.toString();
 

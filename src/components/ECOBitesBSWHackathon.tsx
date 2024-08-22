@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import StarrySky from './StarrySky';
 
-const RustBlockchainProject: React.FC = () => {
+const ECOBitesBSWHackathon: React.FC = () => {
     const navigate = useNavigate();
     return (
         <div className="relative flex flex-col items-center min-h-screen bg-black text-white font-courier">
@@ -58,4 +58,4 @@ const RustBlockchainProject: React.FC = () => {
     );
 };
 
-export default RustBlockchainProject;
+export default ECOBitesBSWHackathon;

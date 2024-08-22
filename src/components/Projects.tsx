@@ -7,6 +7,12 @@ const Projects: React.FC = () => (
       <h2 className="text-3xl font-bold">My Projects</h2>
       <p>An incomplete collection of things I have worked on over the years. <br />Click on a project to learn more!</p>
     </header>
+    <ProjectEntry 
+      href="/ConsiderThisBerkeleyHack" 
+      title="Consider This (UC Berkeley AI Hackathon)" 
+      description="A hackathon project focused on using AI for positive societal impact in education. Our team developed an ed-tech platform called 'Consider This', designed to foster healthy, empathetic discussions with AI agents for K-12 students. The platform emulates a Socratic Seminar environment, helping students engage in rich, human-like dialogue and learn divergent perspectives." 
+      technologies="React, Next.js, Vite, TypeScript, AI, OpenAI, Hume AI" 
+    />
     <ProjectEntry
       href="/ECOBitesBSWHackathon"
       title="ECO Bites Boulder Startup Week Hackathon"
