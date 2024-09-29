@@ -25,7 +25,7 @@ const ConsiderThisBerkeleyHack: React.FC = () => {
                 <section className="bg-white text-black px-8 rounded-xl shadow-lg max-w-3xl w-full mb-8">
                     <div className="flex justify-center items-center py-8">
                         <img
-                            src="https://camo.githubusercontent.com/e67fe34d68accaf65c2c9d8dc205f207f5104d500c572122dfe82aafccd1dfd5/68747470733a2f2f643131327936393861646975327a2e636c6f756466726f6e742e6e65742f70686f746f732f70726f64756374696f6e2f736f6674776172655f70686f746f732f3030322f3933322f3935302f64617461732f6f726967696e616c2e706e67"
+                            src="https://camo.githubusercontent.com/ac60cdfb0c006f8f7fc6b85b0faec2d3ade22d7ba2ddf3ebbe0e5912ce9f2522/68747470733a2f2f643131327936393861646975327a2e636c6f756466726f6e742e6e65742f70686f746f732f70726f64756374696f6e2f736f6674776172655f70686f746f732f3030322f3933322f3935302f64617461732f6f726967696e616c2e706e67"
                             alt="Centered Image"
                             className="max-w-full h-auto"
                         />
