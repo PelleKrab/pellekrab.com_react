@@ -21,7 +21,7 @@ const Projects: React.FC = () => (
     />
     <ProjectEntry
       href="/ECOBitesBSWHackathon"
-      title="ECO Bites Boulder Startup Week Hackathon"
+      title="ECO Bites (Boulder Startup Week Hackathon)"
       description="A hackathon project aimed at promoting sustainability within the restaurant industry. Our team developed a React-based website that uses AI to rate restaurants on their sustainability practices."
       technologies="React, TypeScript, nextJS, AI, Claude 3, and AWS"
     />
