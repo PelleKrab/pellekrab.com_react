@@ -8,6 +8,12 @@ const Projects: React.FC = () => (
       <p>An incomplete collection of things I have worked on over the years. <br />Click on a project to learn more!</p>
     </header>
     <ProjectEntry 
+          href="/EIP7702TechnicalDive" 
+          title="A Technical Dive into EIP-7702" 
+          description="An in-depth exploration of how EIP-7702 will revolutionize Ethereum usability. This entry covers the motivation behind EIP-7702, its functionality, transaction schema, and how it enables EOAs to act as smart contract wallets while retaining their original properties." 
+          technologies="N/A" 
+        />
+    <ProjectEntry 
       href="/ConsiderThisBerkeleyHack" 
       title="Consider This (UC Berkeley AI Hackathon)" 
       description="A hackathon project focused on using AI for positive societal impact in education. Our team developed an ed-tech platform called 'Consider This', designed to foster healthy, empathetic discussions with AI agents for K-12 students. The platform emulates a Socratic Seminar environment, helping students engage in rich, human-like dialogue and learn divergent perspectives." 
