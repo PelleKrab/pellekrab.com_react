@@ -11,6 +11,7 @@ import RustBlockchainProject from './components/RustBlockchainProject';
 import ECOBitesBSWHackathon from './components/ECOBitesBSWHackathon';
 import ConsiderThisBerkeleyHack from './components/ConsiderThisBerkeleyHack';
 import EIP7702TechnicalDive from './components/7702TechnicalDive';
+import CommitBoostCharon from './components/CommitBoostCharon';
 
 const App: React.FC = () => (
   <Router>
@@ -30,6 +31,7 @@ const App: React.FC = () => (
           </div>
         }
       />
+      <Route path="CommitBoost-Charon" element={<CommitBoostCharon />} />
       <Route path="/EIP7702TechnicalDive" element={<EIP7702TechnicalDive />} />
       <Route path="/ConsiderThisBerkeleyHack" element={<ConsiderThisBerkeleyHack />} />
       <Route path="/ECOBitesBSWHackathon" element={<ECOBitesBSWHackathon />} />

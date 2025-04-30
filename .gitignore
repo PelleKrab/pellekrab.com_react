@@ -3,6 +3,13 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+# Firebase
+firebase.json
+functions/node_modules/
+functions/package-lock.json
+functions/package.json
+.Firebase
+
 # Dependency directories
 /.pnp
 .pnp.js
