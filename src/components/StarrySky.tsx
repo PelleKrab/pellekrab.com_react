@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 const StarrySky: React.FC = () => {
     const starContainerRef = useRef<HTMLDivElement>(null);
-    const numStars = 600 * (window.innerHeight / 1080);
+    const numStars = 800 * (window.innerHeight / 1080);
     const minStarDistance = 5;
 
     useEffect(() => {
@@ -21,8 +21,13 @@ const StarrySky: React.FC = () => {
             for (let i = 0; i < numStars; i++) {
                 const star = document.createElement('div');
                 star.classList.add('star', 'absolute', 'bg-white', 'rounded-full');
+                const height = Math.max(
+                  window.innerHeight,
+                  document.body.scrollHeight,
+                  document.documentElement.scrollHeight
+                );
                 const x = Math.random() * window.innerWidth;
-                const y = Math.random() * window.innerHeight * 8;
+                const y = Math.random() * height * 2;
                 star.dataset.x = x.toString();
                 star.dataset.y = y.toString();
 

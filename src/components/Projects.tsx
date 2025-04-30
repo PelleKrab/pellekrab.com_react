@@ -8,6 +8,12 @@ const Projects: React.FC = () => (
       <p>An incomplete collection of things I have worked on over the years. <br />Click on a project to learn more!</p>
     </header>
     <ProjectEntry 
+          href="/CommitBoost-Charon" 
+          title="Charon x CommitBoost" 
+          description="A case study on the compatibility of CommitBoost with Charon, Obol's distributed validator middleware." 
+          technologies="Docker, Python, Bash, Ethers.js" 
+        />
+    <ProjectEntry 
           href="/EIP7702TechnicalDive" 
           title="A Technical Dive into EIP-7702" 
           description="An in-depth exploration of how EIP-7702 will revolutionize Ethereum usability. This entry covers the motivation behind EIP-7702, its functionality, transaction schema, and how it enables EOAs to act as smart contract wallets while retaining their original properties." 
