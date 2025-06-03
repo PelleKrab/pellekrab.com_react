@@ -54,7 +54,7 @@ const CommitBoostCharon: React.FC = () => {
               At first, I wasn’t even sure what had happened: my clients were crashing due to memory issues, my disk filled up, my other disk corrupted, and even with 100 peers, my beacon node was barely syncing. After checking Twitter, I started piecing things together. I followed the steps laid out in EthPandaOps' tweet, but to no avail.
             </p>
             <p>
-              The beacon node was crashing because the Lighthouse client’s caching system, based on Millhouse, has 32 GB of memory allocated to it. After a quick trip to Best Buy, my little home server was able to stop crashing and attempt to sync using the new PandaOps checkpoint.
+              The beacon node was crashing because the Lighthouse client’s caching system has 32 GB of memory allocated to it. After a quick trip to Best Buy, my little home server was able to stop crashing and attempt to sync using the new PandaOps checkpoint.
             </p>
             <p>
               The next jump scare was an error from Nethermind saying I was out of storage. My server had two 1TB SSDs. Before Pectra, the total state was about 400GB, but afterward, it filled one drive and corrupted the other.
@@ -125,16 +125,10 @@ const CommitBoostCharon: React.FC = () => {
               As shown above, 100% of MEV-Boost slots included a payload from a builder, whereas Commit-Boost failed to get a payload over 50% of the time.
             </p>
             <p>
-              This is likely not caused by Commit-Boost itself, as the relay did respond, just without a header. It may be an edge case on Commit-Boost’s side but is more likely due to the lack of builders on Hoodi, as it is still quite new, and the data set is small.
+              This is likely not caused by Commit Boost itself, as the relay did respond, just without a header. After speaking to the Titan relay team, this appears to be due to the lack of builders on Hoodi.
             </p>
             <p>
-              The relay reveal delay data also suffers from a small data set and large outliers. However, it could suggest that Commit-Boost might help reduce relay delays if the trend continues.
-            </p>
-            <p>
-              Overall, the data is inconclusive due to its small size, but it’s promising that Commit-Boost seems to work well with a distributed validator set.
-            </p>
-            <p>
-              Yet nothing definitive can be said about the viability of Commit-Boost and Charon until more data is collected. Hopefully, future testing will show that the "No Header" relay messages were simply the growing pains of a new testnet.
+              After further testing, as shown in the Google Sheet, it appears that Commit Boost works just as well as MEV-Boost. However, the dataset is still too small to conclude that their performance is exactly the same or that one is better. Commit Boost can, without a doubt, be used for Obol’s Charon clients.
             </p>
             
             <header>
@@ -153,7 +147,7 @@ const CommitBoostCharon: React.FC = () => {
               The experience also shed light on UX problems and the difficulty of home staking, even for someone who grew up working on computers. That said, it poured gasoline on the fire that is my ambition to run my own validator on mainnet, and prepared me with the skills to actually do so.
             </p>
             <p>
-              This project isn’t quite finished yet. I plan to continue collecting data and finding the root causes of any remaining issues with this integration, so that others in the future will be able to run an Obol Squad with Commit-Boost. And even further in the future, be able to take advantage of precommitments.
+              With all that said, I'm happy I was able to prove that Commit Boost does, in fact, work with Charon, and hopefully, this will lead to further integration of preconfirmation into Charon in the future.
             </p>
 
             <header>
